@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cyber</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+<body>
+    <form action="/login" method="post">
+        <div class="container">
+            <label for="username">Username:</label>
+            <input type="text" name="username" />
+            <label for="password">Password:</label>
+            <input type="text" name="password" />
+            <input type="submit" value="Submit">
+
+        </div>
+        <script>
+            if (document.location.hash === `#unauthorized`) {
+                document.write(`<div class="unauthorized">Invalid Username or Password</div>`);
+            } else if (document.location.hash === `#error`) {
+                document.write(`<div class="error">An error has occured</div>`);
+            }
+        </script>
+
+    </form>
+</body>
+</html>
+
+
+
+
+
